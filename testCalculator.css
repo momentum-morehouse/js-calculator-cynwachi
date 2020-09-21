@@ -11,36 +11,44 @@ body {
       border-width: 2px;
       border-style: solid;
       width: 20em;
-      height: 35em;
       background-color: darksalmon;
       display: flex;
       flex-direction: column;
       border-radius: 20px;
       align-items: center;
-
+      padding-bottom: 20px;
   }
 
-  .displayIn {
-    border-color: seashell;
-    border-width: 2px;
-    border-style: solid;
-      width: 18em;
-      height: 5em;
+  .displayOut {
+      padding-right: 10px;
+      /*flex: 0 0 100%;*/
+      border-color: seashell;
+      border-width: 2px;
+      border-style: solid;
+      height: 3em;
       background-color: rgb(221, 112, 112);
       margin-top: 1rem;
       border-radius: 20px;
       align-items: center;
+      font-size: 30px;
+      text-align: right;
+      width: 100%;
+  }
+
+  .displayOut::placeholder{
+      color: seashell;
+      font-size: 30px;
+      font-weight: 600;
   }
   
-  .placeHolder{
-      font-size: xxx-large;
-      font-weight: 800;
+  .displayIn{
+      width: 90%;
       color: seashell;
       margin-top: 10px;
       display: flex;
-      justify-content: flex-end;
-      margin-right: 10px;
-    
+      justify-content: center;
+      margin-right: 0px;
+      margin-left: 0px;
   }
 
   .buttonBox1{
@@ -53,25 +61,24 @@ body {
       align-content: flex-end;
       margin-top: 10px;
       width: 18em;
-      height: 26em;
+      height: 20em;
       border-radius: 20px;
-      justify-content: center;
-
+      justify-content: space-around;
   }
 
   .buttons{
       border-color: seashell;
       border-width: 2px;
       border-style: solid;
-      width: 24%;
-      height: 19%;
+      flex: 0 0 22%;
+      height: 75px;
       border-radius: 20px;
       background-color: rosybrown;
       color: seashell;
       font-size: x-large;
       font-weight: 600;
-      display: flex;
+      display: inline-flex;
       justify-content: center;
       margin-bottom: 3px;
-      /* justify-content: space-evenly; */
+      align-items: center;
   }
